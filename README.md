@@ -3,6 +3,8 @@
 A runnable operations-research project for a small **synthetic** manufacturing facility. It turns order quantities and product routings into a machine-wise production schedule, then re-optimizes when a machine fails or an urgent order arrives. The core is an optimization engine, not a forecasting or dashboard project.
 
 > **Quick links:** [Mathematical formulation](docs/mathematical_formulation.md) · [Assumptions & CSV schema](docs/assumptions.md) · [Measured sample results](docs/sample_results.md) · [Validation report](docs/test_results.md) · [Portfolio & interview notes](docs/portfolio.md) · [Offline sample Gantt](results/sample_gantt.html)
+>
+> Working Link:  (https://smartoptimizer.streamlit.app/)
 
 ## What works
 
