@@ -1,0 +1,3 @@
+machine_id,start_minute,end_minute,reason
+M03,2160,2250,Preventive maintenance
+M06,3660,3720,Assembly cell maintenance

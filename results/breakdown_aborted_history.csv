@@ -1,0 +1,2 @@
+operation_id,order_id,product_id,operation_sequence,operation_name,predecessor_operation_id,quantity,machine_id,start,finish,setup_minutes,processing_minutes,release_minute,due_minute,priority,segment_type
+ORD-003::01,ORD-003,P-C,1,Cutting,,17,M01,683,700,10,68,0,2400,3,aborted

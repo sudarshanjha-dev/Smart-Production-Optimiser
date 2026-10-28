@@ -1,0 +1,7 @@
+machine_id,machine_name,resource_group,shift_start_minute,shift_end_minute,working_days
+M01,Saw 1,CUTTING,480,1020,0|1|2|3|4
+M02,Saw 2,CUTTING,510,990,0|1|2|3|4
+M03,CNC 1,MACHINING,480,1020,0|1|2|3|4
+M04,CNC 2,MACHINING,540,1020,0|1|2|3|4
+M05,Finishing cell,FINISHING,480,960,0|1|2|3|4
+M06,Assembly cell,ASSEMBLY,480,1020,0|1|2|3|4

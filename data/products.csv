@@ -1,0 +1,7 @@
+product_id,product_name,unit_cost,shortage_penalty,material_per_unit
+P-A,Mounting bracket,18,95,2
+P-B,Drive shaft,25,125,3
+P-C,Pump housing,32,150,4
+P-D,Hinge pin,12,75,1
+P-E,Gear blank,24,120,3
+P-F,Fixture plate,16,90,2

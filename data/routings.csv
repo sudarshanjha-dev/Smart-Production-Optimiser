@@ -1,0 +1,36 @@
+product_id,operation_sequence,operation_name,machine_id,minutes_per_unit,setup_minutes
+P-A,1,Cutting,M01,2,8
+P-A,1,Cutting,M02,3,6
+P-A,2,Milling,M03,4,14
+P-A,2,Milling,M04,5,10
+P-A,3,Deburring,M05,2,6
+P-A,4,Assembly,M06,3,8
+P-B,1,Cutting,M01,3,8
+P-B,1,Cutting,M02,2,10
+P-B,2,Turning,M03,4,12
+P-B,2,Turning,M04,5,11
+P-B,3,Grinding,M05,3,8
+P-B,4,Final assembly,M06,2,7
+P-C,1,Cutting,M01,4,10
+P-C,1,Cutting,M02,5,7
+P-C,2,Milling,M03,6,16
+P-C,2,Milling,M04,5,16
+P-C,3,Drilling,M05,3,9
+P-C,4,Assembly,M06,4,10
+P-D,1,Cutting,M01,2,6
+P-D,1,Cutting,M02,2,7
+P-D,2,Turning,M03,3,10
+P-D,2,Turning,M04,4,8
+P-D,3,Finishing,M05,2,5
+P-D,4,Packing,M06,2,6
+P-E,1,Cutting,M01,3,9
+P-E,1,Cutting,M02,3,8
+P-E,2,Milling,M03,5,15
+P-E,2,Milling,M04,4,17
+P-E,3,Deburring,M05,3,7
+P-E,4,Assembly,M06,3,9
+P-F,1,Cutting,M01,2,7
+P-F,1,Cutting,M02,3,6
+P-F,2,CNC drilling,M03,3,12
+P-F,2,CNC drilling,M04,4,8
+P-F,3,Assembly,M06,3,8

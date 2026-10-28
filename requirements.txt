@@ -1,0 +1,6 @@
+ortools>=9.12,<10
+pulp>=3.0,<3.3
+pandas>=2.0,<4
+streamlit>=1.66,<2
+plotly>=5.24,<7
+pytest>=8,<10
