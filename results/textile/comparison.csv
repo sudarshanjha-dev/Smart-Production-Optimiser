@@ -1,0 +1,8 @@
+metric,baseline,optimized,reduction_pct
+Makespan (working slots),1016.0,834.0,17.913385826771652
+Makespan (working minutes),5080.0,4170.0,17.913385826771652
+Total mode profile (raw),1330241.0,1530073.0,-15.02224033088741
+Solar used (raw),604600.6,659675.0,
+Grid draw (raw),725640.4,870398.0,-19.948944408277153
+Source-style cost score,48.57703179,58.464284884,-20.35376129349134
+Mean machine utilization (%),78.77296587926509,95.24380495603518,

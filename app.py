@@ -15,6 +15,7 @@ from src.rescheduling import reschedule_breakdown, reschedule_urgent_order
 from src.schedule_metrics import compare_schedules, machine_workload, order_metrics, summary_metrics
 from src.schedule_validator import validate_schedule
 from src.scheduling_model import solve_schedule
+from src.textile_ui import render_textile_workspace
 
 st.set_page_config(page_title="Smart Production Optimizer", page_icon="⚙️", layout="wide", initial_sidebar_state="expanded")
 st.markdown("""
@@ -130,16 +131,27 @@ def baseline_runs(factory):
 
 with st.sidebar:
     st.markdown('<div class="brand">◫ &nbsp; Production<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Optimizer</div><div class="brand-sub">PLANNING / SCHEDULING</div>', unsafe_allow_html=True)
-    page = st.radio("WORKSPACE", PAGES, label_visibility="collapsed")
+    workspace = st.selectbox("Dataset", ("Real textile case study", "Synthetic factory"),
+                             help="Switch between the published textile input and the original synthetic planning workspace.")
     st.divider()
-    active = st.session_state.active_factory
-    st.caption("ACTIVE FACTORY")
-    st.markdown(f"**{len(active.orders)} orders** · {len(active.machines)} machines")
-    st.caption(st.session_state.active_source)
-    st.caption(f"Origin: {active.origin:%d %b %Y} · Horizon: {active.horizon // 1440} days")
-    st.markdown("<br>", unsafe_allow_html=True)
-    st.caption("Synthetic example · local decision-support tool")
+    if workspace == "Synthetic factory":
+        page = st.radio("WORKSPACE", PAGES, label_visibility="collapsed")
+        st.divider()
+        active = st.session_state.active_factory
+        st.caption("ACTIVE FACTORY")
+        st.markdown(f"**{len(active.orders)} orders** · {len(active.machines)} machines")
+        st.caption(st.session_state.active_source)
+        st.caption(f"Origin: {active.origin:%d %b %Y} · Horizon: {active.horizon // 1440} days")
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.caption("Synthetic example · local decision-support tool")
+    else:
+        st.caption("ZENODO CASE STUDY")
+        st.markdown("**Textile hang-tag line** · 3 machines")
+        st.caption("Real case-study input · schedules are computed, not historical execution records")
 
+if workspace == "Real textile case study":
+    render_textile_workspace()
+    st.stop()
 
 if page == "Factory Setup":
     factory = st.session_state.factory

@@ -1,0 +1,71 @@
+{
+  "generated_utc": "2026-10-28T15:00:46.273124+00:00",
+  "python": "3.13.16",
+  "ortools": "9.15.6755",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.41",
+  "input_provenance": "Bundled local copy (SHA-256 verified)",
+  "input_sha256": "5cecb2eb95437d6b789726f302860cefb446731af9eadba2a8379af5644ed169",
+  "order_interpretation": "json",
+  "unit_exclusive": true,
+  "time_limit_seconds": 8.0,
+  "workers": 1,
+  "seed": 0,
+  "objective": "profile",
+  "makespan_limit": 1016,
+  "baseline_rule": "deadline-first FIFO; earliest-finish eligible machine/mode",
+  "baseline": {
+    "status": "HEURISTIC",
+    "validation_errors": [],
+    "metrics": {
+      "operations": 275,
+      "product_units": 132,
+      "makespan_slots": 1016,
+      "makespan_working_minutes": 5080,
+      "calendar_elapsed_minutes": 7480,
+      "total_profile_raw": 1330241.0,
+      "solar_used_raw": 604600.6,
+      "grid_draw_raw": 725640.4,
+      "source_style_cost_score": 48.57703179,
+      "deadline_units": 1,
+      "deadline_units_on_time": 1,
+      "mean_machine_utilization_pct": 78.77296587926509
+    }
+  },
+  "solver": {
+    "status": "FEASIBLE",
+    "objective_value": 1320574.0,
+    "best_bound": 868467.0,
+    "elapsed_seconds_including_build": 8.353604227999995,
+    "metadata": {
+      "solver_wall_seconds": 8.000824815,
+      "time_limit_seconds": 8.0,
+      "workers": 1,
+      "random_seed": 0,
+      "order_interpretation": "json",
+      "unit_exclusive": true,
+      "input_sha256": "5cecb2eb95437d6b789726f302860cefb446731af9eadba2a8379af5644ed169",
+      "warm_start_source": "Deadline-first FIFO with earliest-finishing eligible mode; no optimality proof.",
+      "warm_start_makespan_slots": 1016,
+      "objective": "total_mode_profile_raw",
+      "makespan_limit_slots": 1016,
+      "profile_integer_scale": 1000
+    },
+    "validation_errors": [],
+    "metrics": {
+      "operations": 275,
+      "product_units": 132,
+      "makespan_slots": 1016,
+      "makespan_working_minutes": 5080,
+      "calendar_elapsed_minutes": 7480,
+      "total_profile_raw": 1320574.0,
+      "solar_used_raw": 604346.4,
+      "grid_draw_raw": 716227.6,
+      "source_style_cost_score": 47.921059038,
+      "deadline_units": 1,
+      "deadline_units_on_time": 1,
+      "mean_machine_utilization_pct": 79.00262467191601
+    }
+  },
+  "comparison_valid_under_same_constraints": true,
+  "makespan_reduction_pct": 0.0
+}

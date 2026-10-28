@@ -1,0 +1,2 @@
+# Preserve the checksum-verified Zenodo input byte-for-byte, including CRLF.
+data/textile/Input_JSON_Schedule_Optimization.json -text -diff

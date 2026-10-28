@@ -2,6 +2,16 @@
 
 Executed on 2026-10-28 in the supplied Linux environment using Python 3.13.16, OR-Tools 9.15.6755, PuLP 3.2.2, Pandas 2.2.3, Streamlit 1.66.1 and pytest 9.0.3.
 
+## Textile integration verification (2026-10-28)
+
+The full updated repository suite ran with `pytest -q`: **57 passed in 27.78s**. This includes the original synthetic regressions and new tests for pinned input/checksums, remote caching/fallback, malformed/unsupported input, both disputed order directions and both unit policies, machine/mode compatibility, same-type and cross-type collision behavior, precedence, non-overlap, repeated runs, time leaps, hard deadlines, infeasibility, both objectives with hand-checkable optima, independently computed KPIs, persisted benchmark CSVs, Gantt endpoints, and Streamlit real/synthetic mode navigation and solves.
+
+`python scripts/smoke_ui.py` passed real-data startup and the original synthetic planning, scheduling, Gantt, breakdown, urgent-order, comparison and capacity pages. `python -m pip check` passed; the Streamlit server bound to `0.0.0.0:8501`, with `/` and `/_stcore/health` returning HTTP 200. The published JSON/workbook audit was run against the downloaded, checksummed reference files. No deployment or Windows runtime verification was performed in this integration run.
+
+## Earlier synthetic-only snapshot
+
+The following is the previous 31-test synthetic report and is retained for historical context, not the current total.
+
 ## Automated tests
 
 Command: `pytest -q`

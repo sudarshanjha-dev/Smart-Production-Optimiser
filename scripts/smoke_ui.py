@@ -8,7 +8,8 @@ def check(at,stage):
  print(stage,'errors=',err,'titles=',[x.value for x in at.title], flush=True)
  if err: raise RuntimeError(stage+': '+str(err))
 
-at=AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py'),default_timeout=60).run(); check(at,'start')
+at=AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py'),default_timeout=60).run(); check(at,'real-data start')
+bylabel(at.selectbox,'Dataset').set_value('Synthetic factory').run(); check(at,'synthetic start')
 at.radio[0].set_value('Production Planning').run(); check(at,'planning')
 bylabel(at.button,'Optimize production quantities').click().run(); check(at,'plan-solve')
 print('success:',[x.value for x in at.success],flush=True)
